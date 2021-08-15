@@ -1,0 +1,139 @@
+:root {
+    --primary-color:#fff;
+    --secondary-color:#000;
+}
+* {
+    padding: 10px;
+    margin: 0;
+}
+
+body {
+    background: var(--primary-color);
+}
+#mode {
+    padding: 1% 1%;
+    font-size: 20px;
+    margin-left: 85%;
+    border-radius: 20px;
+    margin-top: -1%;
+}
+.dark-theme {
+    --primary-color:#000;
+    --secondary-color:#fff;
+}
+#header {
+    display: flex;
+    justify-content: center;
+    color: var(--secondary-color);
+    margin-left: 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+}
+.container-1 {
+    background: rgb(240, 240, 240);
+    width: 670px;
+    height: 200px;
+    overflow: scroll;
+    margin-left: 24%;
+    border-radius: 10px;
+}
+#text {
+    font-size: 25px;
+    margin-left: 4%;
+    color:black ;
+}
+#text-el {
+    padding: 1% 20% 1% 1%;
+    border-radius: 10px;
+    border: 1px solid var(--secondary-color);
+    outline: none;
+    color: black;
+    margin-left: 7%;
+}
+#submit-el {
+    font-size: 20px;
+    padding: 1% 3%;
+    background: green;
+    border: 1px solid green;
+    margin-left: 1%;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    outline: none;
+    border: none;
+}
+
+#delete-el {
+    padding: 1% 2%;
+    font-size: 20px;
+    margin-left: 1%;
+    border-radius: 10px;
+    background: red;
+    color: #fff;
+    border: 1px solid red;
+}
+
+@media(max-width:700px) {
+    #header {
+        color: var(--secondary-color);
+        margin-left: 5%;
+        margin-top: 3%;
+    }
+    #mode {
+    padding: 1% 1%;
+    font-size: 20px;
+    margin-left: 60%;
+    border-radius: 10px;
+    margin-top: -1%;
+    }
+    .container-1 {
+        background: rgb(240, 240, 240);
+        width: 260px;
+        height: 200px;
+        overflow: scroll;
+        margin-left: 1%;
+        border-radius: 10px;
+    }
+    .container {
+        display: block;
+    }
+    #text-el {
+        padding: 4% 35% 4% 1%;
+        border-radius: 10px;
+        border: 1px solid var(--secondary-color);
+        outline: none;
+        color: black;
+        margin-left: 0%;
+        margin-top: 1%;
+        margin-bottom: 5%;
+    }
+    #submit-el {
+        font-size: 15px;
+        padding:5% 13%;
+        background: green;
+        border: 1px solid green;
+        margin-left: 3%;
+        color: rgb(255, 255, 255);
+        border-radius: 10px;
+        outline: none;
+        border: none;
+    }
+    #text {
+        font-size: 19px;
+    }
+    
+    #delete-el {
+        padding: 5% 10%;
+        font-size: 15px;
+        margin-left: 1%;
+        border-radius: 10px;
+        background: red;
+        color: #fff;
+        border: 1px solid red;
+        margin-right: 10%;
+    }
+}
